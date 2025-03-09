@@ -28,5 +28,5 @@ with DAG(
         task_id='bash_t2',    ### 화면에 나타나는 값 / bash 명과 task_id는 일치하게끔 설정하는 것이 좋음 
         bash_command='echo $HOSTNAME',
     )
-
-   bash_t1 >> bash_t2
+    
+    bash_t1 >> bash_t2
