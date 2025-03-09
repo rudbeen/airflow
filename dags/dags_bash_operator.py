@@ -3,7 +3,7 @@ import pendulum
 
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from airflow.utils.dates import days_ago
+from airflow.utils.dates import days_ago 
 
 args = {
     'owner': 'airflow',
@@ -30,3 +30,5 @@ with DAG(
     )
     
     bash_t1 >> bash_t2
+
+
